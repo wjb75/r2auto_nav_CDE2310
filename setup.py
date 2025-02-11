@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'sensor_msgs', 'numpy', 'RPi.GPIO'],
     zip_safe=True,
     maintainer='nus',
     maintainer_email='nus@todo.todo',
@@ -26,6 +26,7 @@ setup(
             'r2occupancy = auto_nav.r2occupancy:main',
             'r2occupancy2 = auto_nav.r2occupancy2:main',
             'r2auto_nav = auto_nav.r2auto_nav:main',
+            'scannerfore2 = auto_nav.scannerfore2:main',
         ],
     },
 )
