@@ -39,8 +39,8 @@ class Scanner(Node):
         lr2i = np.nanargmin(laser_range)
 
         # log the info
-        self.get_logger().info('Shortest distance at %i degrees' % lr2i)
-
+        self.get_logger().info('Shortest distance at %i degrees' % (lr2i * 1.63636363636))
+        # self.get_logger().info('Max index: %i, Min index: %i' % (len(laser_range)-1, 0))
 
 def main(args=None):
     rclpy.init(args=args)
